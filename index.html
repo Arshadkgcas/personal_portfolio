@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arshad G M — B.Sc. Computer Science student, aspiring full-stack developer and NCC cadet.">
+  <title>Arshad G M | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Arshad home">ARSHAD<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navigation" id="navigation" aria-label="Main navigation">
+      <a class="active" href="#home">HOME</a><a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a>
+      <a href="#experience">EXPERIENCE</a><a href="#ncc">NCC</a><a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-panel"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO! THIS IS ARSHAD</p>
+        <h1>Student, <span>Developer</span><br>&amp; NCC Cadet</h1>
+        <p class="hero-description">B.Sc. Computer Science student and aspiring full-stack developer, building practical skills through code, curiosity, and discipline.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Hire Me</a>
+          <a class="button button-outline" href="assets/Arshad-GM-CV.pdf" download id="cvButton">Download CV</a>
+        </div>
+        <p class="cv-note" id="cvNote">Add your resume PDF to the assets folder to enable the download.</p>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="images/arshad.jpg" alt="Portrait of Arshad G M"
+             onerror="this.style.display='none'; document.getElementById('photoFallback').hidden=false;">
+        <div class="photo-fallback" id="photoFallback" hidden>
+          <div class="fallback-avatar">AG</div><p>Add your photo</p>
+          <small>Save it as <strong>images/arshad.jpg</strong></small>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Portfolio highlights">
+      <article class="stat"><span class="stat-icon" aria-hidden="true">⌘</span><div><strong>3</strong><span>PROJECTS</span></div></article>
+      <article class="stat"><span class="stat-icon" aria-hidden="true">✦</span><div><strong>6</strong><span>CERTIFICATIONS</span></div></article>
+      <article class="stat"><span class="stat-icon" aria-hidden="true">◎</span><div><strong>CGPA</strong><span>B.SC. COMPUTER SCIENCE</span></div></article>
+      <article class="stat"><span class="stat-icon" aria-hidden="true">✓</span><div><strong>3 Months</strong><span>INTERNSHIP EXPERIENCE</span></div></article>
+    </section>
+
+    <section class="content-section about-section" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>Curious mind. <span>Focused effort.</span></h2>
+      <p class="section-copy">I'm Arshad G M, a second-year B.Sc. Computer Science student at KG College of Arts and Science, Coimbatore. I'm working toward becoming a full-stack developer, strengthening my programming fundamentals, problem-solving, and application-development skills. As an NCC cadet, I also value discipline, teamwork, and responsibility.</p>
+      <div class="quick-facts">
+        <div><span>EDUCATION</span><strong>B.Sc. Computer Science</strong></div>
+        <div><span>COLLEGE</span><strong>KG College of Arts and Science</strong></div>
+        <div><span>CAREER FOCUS</span><strong>Full-stack web development</strong></div>
+      </div>
+    </section>
+
+    <section class="content-section skills-section" id="skills">
+      <p class="eyebrow">WHAT I WORK WITH</p><h2>Technical <span>Skills</span></h2>
+      <div class="skill-list">
+        <span>C Programming</span><span>Java</span><span>Python</span><span>JavaScript</span>
+        <span>Object-Oriented Programming</span><span>Problem Solving</span><span>HTML &amp; CSS</span>
+      </div>
+    </section>
+
+    <section class="content-section projects-section" id="projects">
+      <p class="eyebrow">SELECTED WORK</p><h2>Featured <span>Projects</span></h2>
+      <div class="project-grid">
+        <article class="project-card"><span class="project-number">01</span><h3>College Course Registration &amp; Subject Enrolment System</h3><p>A system concept for managing course registration and subject-enrolment workflows.</p><span class="project-tag">SYSTEM DESIGN · WORKFLOW</span></article>
+        <article class="project-card"><span class="project-number">02</span><h3>Emergency SOS Mobile Application</h3><p>A mobile-app project concept focused on quick emergency assistance and SOS communication.</p><span class="project-tag">MOBILE APPLICATION</span></article>
+        <article class="project-card"><span class="project-number">03</span><h3>Simple Console Calculator</h3><p>A console-based calculator demonstrating programming fundamentals, input handling, and arithmetic operations.</p><span class="project-tag">PROGRAMMING FUNDAMENTALS</span></article>
+      </div>
+      <p class="edit-note">Project descriptions are based on your resume. Add links, screenshots, and technologies as you have them available.</p>
+    </section>
+
+    <section class="content-section experience-section" id="experience">
+      <p class="eyebrow">LEARNING BY DOING</p><h2>Experience &amp; <span>Certifications</span></h2>
+      <article class="experience-card">
+        <span class="timeline-mark"></span><div><h3>Software Development Internship</h3><p class="muted">3-month internship</p><p>Gained practical exposure to software-development workflows and strengthened programming and problem-solving skills.</p></div>
+      </article>
+      <div class="cert-grid">
+        <article class="cert-card"><span class="cert-type">NPTEL</span><h3>Cloud Computing and Distributed Systems</h3></article>
+        <article class="cert-card"><span class="cert-type">COURSERA</span><h3>Programming in Python</h3></article>
+        <article class="cert-card"><span class="cert-type">COURSERA</span><h3>Advanced Java Development</h3></article>
+        <article class="cert-card"><span class="cert-type">COURSERA</span><h3>Create a Supermarket App Using Java OOP</h3></article>
+        <article class="cert-card"><span class="cert-type">COURSERA</span><h3>Microsoft Azure Fundamentals (AZ-900) Exam Prep</h3></article>
+        <article class="cert-card"><span class="cert-type">COURSERA</span><h3>C Programming with DSA Foundation</h3></article>
+      </div>
+    </section>
+
+    <section class="content-section ncc-section" id="ncc">
+      <p class="eyebrow">DISCIPLINE · TEAMWORK · SERVICE</p>
+      <h2>My NCC <span>Journey</span></h2>
+      <p class="section-copy">As an NCC cadet, I continue to develop discipline, teamwork, confidence, and service-mindedness through training, camps, and competitive activities. My NCC certificate is currently in progress.</p>
+
+      <div class="ncc-highlights">
+        <article class="ncc-highlight">
+          <span class="ncc-label">CERTIFICATION</span>
+          <h3>NCC Certificate</h3>
+          <p>In progress</p>
+        </article>
+        <article class="ncc-highlight">
+          <span class="ncc-label">APPOINTMENT</span>
+          <h3>Cadet</h3>
+          <p>No formal appointment held</p>
+        </article>
+        <article class="ncc-highlight">
+          <span class="ncc-label">TRAINING</span>
+          <h3>Drill &amp; Firing</h3>
+          <p>Participated in NCC training activities</p>
+        </article>
+      </div>
+
+      <div class="ncc-subsection">
+        <h3>Camp &amp; Programme Participation</h3>
+        <ul class="ncc-list">
+          <li><span class="ncc-dot"></span><div><strong>CATC</strong><p>Combined Annual Training Camp</p></div></li>
+          <li><span class="ncc-dot"></span><div><strong>RDC Selection — Training 1 &amp; Training 2</strong><p>Participated in the selection and training stages as stated.</p></div></li>
+          <li><span class="ncc-dot"></span><div><strong>YUVA AAPDA MITRA Scheme</strong><p>Programme participation.</p></div></li>
+          <li><span class="ncc-dot"></span><div><strong>Indian Military Academy Attachment Camp — Dehradun</strong><p>Attachment camp participation.</p></div></li>
+        </ul>
+      </div>
+
+      <div class="ncc-subsection">
+        <h3>Achievements</h3>
+        <div class="ncc-awards">
+          <article class="ncc-award"><span class="award-icon" aria-hidden="true">★</span><div><strong>Debate Competition</strong><p>Winner</p></div></article>
+          <article class="ncc-award"><span class="award-icon" aria-hidden="true">★</span><div><strong>Tug of War</strong><p>Winner</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p><h2>Have an opportunity in <span>mind?</span></h2>
+      <p class="section-copy">I'm open to learning opportunities, collaborations, internships, and conversations about software development.</p>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:arshadkgcas@gmail.com">Email Me</a>
+        <a class="social-link" href="https://linkedin.com/in/arshad-ganesan-27352b389" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="social-link" href="https://github.com/Arshadkgcas" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+      <p class="contact-location">Coimbatore, Tamil Nadu, India</p>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© <span id="year"></span> Arshad G M. Built with HTML, CSS &amp; JavaScript.</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
